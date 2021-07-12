@@ -11,3 +11,16 @@ class Solution:
                 if nums [i] + nums[j] == target:
                     return[i, j]
         return []
+
+
+# Faster solution:
+# Solution source: https://youtu.be/2uWRxgN1Sbo
+        complementMap = dict()
+    
+        for i in range(len(nums)):
+            num = nums[i]
+            complement = target - num
+            if num in complementMap:
+                return[complementMap[num], i]
+            else:
+                complementMap[complement] = i
