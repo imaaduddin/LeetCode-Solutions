@@ -2,7 +2,7 @@
 
 # Question difficulty is easy
 
-# Solution from another use on LeetCode:
+# Solution from another user on LeetCode:
 # Brute force solution running O(n^2) 
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
